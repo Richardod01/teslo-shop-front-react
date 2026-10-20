@@ -19,6 +19,7 @@ import {
 const AuthLayout = lazy(() => import("./auth/layout/AuthLayout.js"));
 const AdminLayout = lazy(() => import("./admin/layouts/AdminLayout"));
 
+// export const appRouter = createBrowserRouter([
 export const appRouter = createBrowserRouter([
   // Public routes
   {
