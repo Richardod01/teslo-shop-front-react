@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createBrowserRouter, Navigate } from "react-router";
+import { createHashRouter, Navigate } from "react-router";
 import { HomePage } from "./shop/pages/home/HomePage";
 import { ProductPage } from "./shop/pages/product/ProductPage";
 import { GenderPage } from "./shop/pages/gender/GenderPage";
@@ -19,8 +19,7 @@ import {
 const AuthLayout = lazy(() => import("./auth/layout/AuthLayout.js"));
 const AdminLayout = lazy(() => import("./admin/layouts/AdminLayout"));
 
-// export const appRouter = createBrowserRouter([
-export const appRouter = createBrowserRouter([
+export const appRouter = createHashRouter([
   // Public routes
   {
     path: "/",
